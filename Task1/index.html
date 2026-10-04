@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechBridge - Bridging Learning to Real-World Experience</title>
+  <style>
+    /* Global Styles */
+    :root {
+      --primary-color: #0056b3;
+      --secondary-color: #00a86b;
+      --dark-color: #1a1a1a;
+      --light-bg: #f8f9fa;
+      --white: #ffffff;
+      --text-color: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: var(--white);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo-brand {
+      /* font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color); */
+      height: 8vh;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      color: var(--dark-color);
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0056b3, #00a86b);
+      color: var(--white);
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--white);
+      color: var(--primary-color);
+      padding: 12px 28px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e6e6e6;
+    }
+
+    /* Content Sections */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--dark-color);
+    }
+
+    /* Programs Cards */
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: var(--primary-color);
+    }
+
+    /* Internship Highlight */
+    .internship-box {
+      background: var(--white);
+      border-left: 5px solid var(--secondary-color);
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Community Links */
+    .community-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-btn {
+      padding: 10px 20px;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .social-btn:hover {
+      background: var(--primary-color);
+      color: var(--white);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark-color);
+      color: var(--white);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Responsive Layout */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container navbar">
+      <!-- <div class="logo-brand">TechBridge</div> -->
+       <img class="logo-brand" src="images/techbridge-logo.png" alt="">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>TechBridge by Baselink Services Limited</h1>
+      <p>Bridging Learning to Real-World Experience</p>
+      <a href="https://www.linkedin.com/company/techbridge-services/" class="btn" target="_blank">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Introduction / About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About TechBridge</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+        TechBridge is dedicated to empowering individuals with practical tech skills, bridging the gap between theoretical learning and real-world experience to help learners launch and accelerate their careers.
+      </p>
+    </div>
+  </section>
+
+  <!-- Current Programs Section -->
+  <section id="programs" style="background-color: #eee;">
+    <div class="container">
+      <h2 class="section-title">Current Programs</h2>
+      <div class="program-grid">
+        <div class="card">
+          <h3>Data Analytics</h3>
+          <p>Gain hands-on experience in data exploration, visualization, and practical analytics workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Master modern responsive front-end design, HTML5, CSS3, and core web development practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Highlight Section -->
+  <section id="internship">
+    <div class="container">
+      <h2 class="section-title">Web Development Internship</h2>
+      <div class="internship-box">
+        <h3>30-Day Practical Internship</h3>
+        <p style="margin-top: 10px;">
+          Build real-world projects, work with industry specifications, and gain hands-on technical experience in a 30-day intensive practical internship program.
+        </p>
+        <div style="margin-top: 20px;">
+          <a href="https://www.linkedin.com/company/techbridge-services/" target="_blank" class="btn" style="background: var(--primary-color); color: white;">Application Form</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" style="background-color: #eee;">
+    <div class="container">
+      <h2 class="section-title">Join Our Community</h2>
+      <div class="community-links">
+        <a href="https://www.linkedin.com/company/techbridge-services/" class="social-btn" target="_blank">LinkedIn Page</a>
+        <a href="https://www.facebook.com/p/Baselink-Services-100066771475783/" class="social-btn" target="_blank">Facebook Page</a>
+        <a href="https://chat.whatsapp.com/example" class="social-btn" target="_blank">WhatsApp Community</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Have questions or want to learn more?</p>
+      <p style="margin-top: 10px; font-weight: bold; font-size: 1.1rem;">
+        Email: <a href="mailto:techbridgebaselink@gmail.com" style="color: var(--primary-color);">techbridgebaselink@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 TechBridge by Baselink Services Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
