@@ -187,6 +187,7 @@
       .navbar {
         flex-direction: column;
         gap: 15px;
+        font-size: 0.75rem;
       }
 
       .hero h1 {
