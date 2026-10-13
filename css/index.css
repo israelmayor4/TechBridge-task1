@@ -7,10 +7,13 @@
   --white: #ffffff;
   --text-color: #333333;
   --accent-analytics: #0891b2;
+  --accent-color: #2563eb;
   --accent-web: #7c3aed;
   --surface-white: #ffffff;
   --text-main: #334155;
+  --text-light: #64748b;
   --text-muted: #64748b;
+  --card-bg: #ffffff;
   --border-color: #e2e8f0;
   --radius: 12px;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -196,9 +199,9 @@ footer {
 
 
 /* ----------------Program Page-------------- */
- a.active {
-            color: var(--secondary-color);
-        }
+a.active {
+  color: var(--secondary-color);
+}
 
 
 /* Programs Grid & Cards */
@@ -387,4 +390,161 @@ footer {
   .hero h1 {
     font-size: 2rem;
   }
+}
+
+
+
+
+
+/* ------------------Internship Tasks------------ */
+
+.tasks-hero {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.badge {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.tasks-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tasks-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+
+.main-content {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.task-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.active-card {
+  border-color: var(--accent-color);
+  border-width: 2px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-num {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+.task-day {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.task-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.task-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Difficulty Badges */
+.difficulty {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+
+.difficulty.beginner {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.difficulty.beginner-inter {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.difficulty.intermediate {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.difficulty.advanced {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+
+@media (max-width: 1150px) {
+  .tasks-grid {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tasks-hero h2 {
+    font-size: 2rem;
+  }
+
+
 }
