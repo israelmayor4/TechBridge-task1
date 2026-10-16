@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBridge | Challenge Hub</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="#">
+                <img src="../images/techbridge-logo.png" alt="TechBridge Logo" class="logo-brand">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#" class="active">Challenges</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="tasks-hero">
+        <div class="container">
+            <span class="badge">Hands-On Practice</span>
+            <h2>TechBridge Challenge Hub</h2>
+            <p>Explore practical challenges designed to help TechBridge interns apply their skills, gain real-world
+                experience, and build high-quality portfolio projects.</p>
+        </div>
+    </section>
+
+    <!-- Main Content & Filters -->
+    <main class="main-content container">
+        <h3 class="section-title">Browse Challenges</h3>
+
+        <!-- Filter Section -->
+        <div class="filter-controls">
+            <!-- Track Filter -->
+            <div class="filter-group">
+                <label>Track:</label>
+                <button class="track-btn active-track" data-track="all">All</button>
+                <button class="track-btn" data-track="Data Analytics">Data Analytics</button>
+                <button class="track-btn" data-track="Web Development">Web Development</button>
+            </div>
+
+            <!-- Difficulty Filter -->
+            <div class="filter-group">
+                <label>Difficulty:</label>
+                <button class="diff-btn active-diff" data-diff="all">All</button>
+                <button class="diff-btn" data-diff="Beginner">Beginner</button>
+                <button class="diff-btn" data-diff="Intermediate">Intermediate</button>
+                <button class="diff-btn" data-diff="Advanced">Advanced</button>
+            </div>
+        </div>
+
+        <!-- Challenges Grid -->
+        <div class="tasks-grid" id="challenges-grid">
+            <!-- Cards rendered via JavaScript -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>No challenges match your selected filters. Try choosing a different track or difficulty!</p>
+        </div>
+    </main>
+
+    <!-- Challenge Details Modal -->
+    <div class="modal-overlay" id="challenge-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <span class="card-badge" id="modal-track">Track</span>
+                <span class="difficulty" id="modal-diff">Difficulty</span>
+            </div>
+            <h2 id="modal-title">Challenge Title</h2>
+            <p id="modal-description" class="modal-desc"></p>
+
+            <div class="modal-details-grid">
+                <div class="detail-item">
+                    <strong>Objective:</strong>
+                    <p id="modal-objective"></p>
+                </div>
+                <div class="detail-item">
+                    <strong>Required Skills:</strong>
+                    <p id="modal-skills"></p>
+                </div>
+                <div class="detail-item">
+                    <strong>Tools Used:</strong>
+                    <p id="modal-tools"></p>
+                </div>
+                <div class="detail-item">
+                    <strong>Estimated Time:</strong>
+                    <p id="modal-time"></p>
+                </div>
+                <div class="detail-item full-width">
+                    <strong>Expected Result:</strong>
+                    <p id="modal-result"></p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn2" id="modal-close-btn">Close Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TechBridge Internship Program. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/challenges.js"></script>
+</body>
+
+</html>
