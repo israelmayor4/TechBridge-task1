@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBridge - Internship Tasks Journey</title>
+    <title>TechBridge - Interactive Internship Roadmap</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -12,132 +12,142 @@
     <!-- Navigation Bar -->
     <header>
         <div class="container navbar">
-            <img class="logo-brand" src="../images/techbridge-logo.png" alt="">
+            <img class="logo-brand" src="../images/techbridge-logo.png" alt="TechBridge Logo">
 
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="program.html">Programs</a></li>
                 <li><a href="tasks.html" class="active">Internship Tasks</a></li>
             </ul>
-
         </div>
     </header>
 
     <!-- Hero / Introduction Section -->
     <section class="tasks-hero">
         <div class="container">
-            <span class="badge">30-Day Practical Journey</span>
-            <h2>The Internship Tasks Experience</h2>
-            <p>Welcome to the core of the TechBridge internship. Over 30 days, participants progressively develop
-                professional web development skills by building real-world projects, moving seamlessly from beginner
-                fundamentals to advanced platforms.</p>
+            <span class="badge">30-Day Practical Internship</span>
+            <h2>The Internship Roadmap Experience</h2>
+            <p>Welcome to the core of the TechBridge internship. Choose your track below to explore the 30-day journey, moving seamlessly from beginner fundamentals to advanced platforms.</p>
+            
+            <!-- Track Selection Buttons (Required Feature 1 & 4) -->
+            <div class="track-selector" style="margin-top: 20px;">
+                <p style="margin-bottom: 10px; font-weight: bold;">Currently Viewing Track:</p>
+                <button id="btn-web" class="track-btn active-track" onclick="switchTrack('web')">Web Development</button>
+                <button id="btn-data" class="track-btn" onclick="switchTrack('data')">Data Analytics</button>
+            </div>
         </div>
     </section>
 
-    <!-- Tasks Grid / Roadmap Section -->
+
     <main class="container main-content">
-        <h3 class="section-title">Your 8-Step Internship Roadmap</h3>
-        <div class="tasks-grid">
-            <!-- Task 1 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 1</span>
-                    <span class="task-day">Day 1</span>
-                </div>
-                <h4>Build the TechBridge Homepage</h4>
-                <p>Create the first version of the TechBridge website using HTML and CSS[cite: 1].</p>
-                <span class="difficulty beginner">Beginner</span>
-            </div>
-
-            <!-- Task 2 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 2</span>
-                    <span class="task-day">Day 4</span>
-                </div>
-                <h4>Build the TechBridge Programs Experience</h4>
-                <p>Create a Programs experience that presents TechBridge's available learning programs[cite: 1].</p>
-                <span class="difficulty beginner">Beginner</span>
-            </div>
-
-            <!-- Task 3 -->
-            <div class="task-card active-card">
-                <div class="task-header">
-                    <span class="task-num">Task 3</span>
-                    <span class="task-day">Day 8</span>
-                </div>
-                <h4>Build the Internship Tasks Experience</h4>
-                <p>Create an interface that presents the TechBridge internship tasks and helps users understand the
-                    internship journey[cite: 1].</p>
-                <span class="difficulty beginner-inter">Beginner → Intermediate</span>
-            </div>
-
-            <!-- Task 4 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 4</span>
-                    <span class="task-day">Day 11</span>
-                </div>
-                <h4>Build an Interactive Task Tracker</h4>
-                <p>Use JavaScript to make the internship task experience interactive and allow progress to be
-                    tracked[cite: 1].</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-
-            <!-- Task 5 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 5</span>
-                    <span class="task-day">Day 15</span>
-                </div>
-                <h4>Build the Intern Registration Experience</h4>
-                <p>Create a professional registration/onboarding interface for TechBridge interns[cite: 1].</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-
-            <!-- Task 6 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 6</span>
-                    <span class="task-day">Day 19</span>
-                </div>
-                <h4>Build the Task Submission System</h4>
-                <p>Create an interface through which interns can prepare and submit their task work[cite: 1].</p>
-                <span class="difficulty intermediate">Intermediate</span>
-            </div>
-
-            <!-- Task 7 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 7</span>
-                    <span class="task-day">Day 22</span>
-                </div>
-                <h4>Build the Intern Dashboard</h4>
-                <p>Create a dashboard where an intern can view their profile, progress, tasks, and submissions[cite: 1].
-                </p>
-                <span class="difficulty advanced">Intermediate → Advanced</span>
-            </div>
-
-            <!-- Task 8 -->
-            <div class="task-card">
-                <div class="task-header">
-                    <span class="task-num">Task 8</span>
-                    <span class="task-day">Day 26</span>
-                </div>
-                <h4>Build the Complete Platform</h4>
-                <p>Combine the different components created during the internship into a complete TechBridge
-                    platform[cite: 1].</p>
-                <span class="difficulty advanced">Advanced</span>
-            </div>
+        <h3 class="section-title" id="roadmap-title">Web Development Track — 8-Step Roadmap</h3>
+        <div class="tasks-grid" id="tasks-container">
+           
         </div>
     </main>
 
-    <!-- Footer -->
+   
+    
+
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 TechBridge Internship Program. All rights reserved.</p>
         </div>
     </footer>
+
+
+
+
+
+    <!-- JavaScript Implementation -->
+    <script>
+       
+        const internshipData = {
+            web: [
+                { num: "Task 1", day: "Day 1", title: "Build the TechBridge Homepage", desc: "Create the first version of the TechBridge website using HTML and CSS.", diffClass: "beginner", diffText: "Beginner" },
+                { num: "Task 2", day: "Day 4", title: "Build the TechBridge Programs Experience", desc: "Create a Programs experience presenting TechBridge's available learning programs.", diffClass: "beginner", diffText: "Beginner" },
+                { num: "Task 3", day: "Day 8", title: "Build the Internship Tasks Experience", desc: "Create an interface that presents the TechBridge internship tasks and helps users understand the internship journey.", diffClass: "beginner-inter", diffText: "Beginner → Intermediate" },
+                { num: "Task 4", day: "Day 11", title: "Build an Interactive Internship Roadmap", desc: "Use JavaScript to allow visitors to switch between the Data Analytics and Web Development internship tracks.", diffClass: "beginner-inter", diffText: "Beginner → Intermediate" },
+                { num: "Task 5", day: "Day 15", title: "Build the Intern Registration Experience", desc: "Create a professional registration and onboarding interface for TechBridge interns.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 6", day: "Day 19", title: "Build the Task Submission System", desc: "Create an interface through which interns can prepare and submit their task work.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 7", day: "Day 22", title: "Build the Intern Dashboard", desc: "Create a dashboard where an intern can view their profile, progress, tasks and submissions.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 8", day: "Day 26", title: "Build the Complete TechBridge Internship Platform", desc: "Combine the different components created during the internship into a complete TechBridge platform.", diffClass: "intermediate", diffText: "Intermediate" }
+            ],
+            data: [
+                { num: "Task 1", day: "Day 1", title: "Data Cleaning Basics", desc: "Clean a messy dataset using Google Sheets or Excel. Identify and fix duplicate rows, blank cells, inconsistent formatting, and incorrect data types.", diffClass: "beginner", diffText: "Beginner" },
+                { num: "Task 2", day: "Day 4", title: "Formulas & Pivot Tables", desc: "Use spreadsheet formulas and Pivot Tables to answer questions and extract useful insights from a dataset.", diffClass: "beginner", diffText: "Beginner" },
+                { num: "Task 3", day: "Day 8", title: "Data Visualization", desc: "Create charts and a simple dashboard that communicate useful insights from a dataset.", diffClass: "beginner-inter", diffText: "Beginner → Intermediate" },
+                { num: "Task 4", day: "Day 11", title: "Introduction to SQL", desc: "Practice basic SQL queries and use them to answer real-world questions about data.", diffClass: "beginner-inter", diffText: "Beginner → Intermediate" },
+                { num: "Task 5", day: "Day 15", title: "SQL Joins & Aggregations", desc: "Use JOIN, GROUP BY and aggregate functions such as COUNT, SUM and AVG to analyze information across multiple tables.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 6", day: "Day 19", title: "Lookup Functions & Data Wrangling", desc: "Use VLOOKUP or XLOOKUP to combine related datasets and handle data mismatches.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 7", day: "Day 22", title: "Mini Analysis Project", desc: "Complete a small end-to-end analysis involving data cleaning, formulas, Pivot Tables, charts and recommendations.", diffClass: "intermediate", diffText: "Intermediate" },
+                { num: "Task 8", day: "Day 26", title: "Capstone Project", desc: "Complete a larger project combining spreadsheet analysis and SQL using at least two related tables.", diffClass: "intermediate", diffText: "Intermediate" }
+            ]
+        };
+
+        
+        let currentTrack = 'web';
+
+        
+
+        function renderTasks(trackKey) {
+            const container = document.getElementById('tasks-container');
+            const titleElement = document.getElementById('roadmap-title');
+            
+        
+            container.innerHTML = '';
+
+            
+
+            if (trackKey === 'web') {
+                titleElement.textContent = "Web Development Track — 8-Step Roadmap";
+            } else {
+                titleElement.textContent = "Data Analytics Track — 8-Step Roadmap";
+            }
+
+            const tasks = internshipData[trackKey];
+
+         
+
+            tasks.forEach(task => {
+                const card = document.createElement('div');
+                card.className = 'task-card';
+                card.innerHTML = `
+                    <div class="task-header">
+                        <span class="task-num">${task.num}</span>
+                        <span class="task-day">${task.day}</span>
+                    </div>
+                    <h4>${task.title}</h4>
+                    <p>${task.desc}</p>
+                    <span class="difficulty ${task.diffClass}">${task.diffText}</span>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+
+        function switchTrack(trackKey) {
+            currentTrack = trackKey;
+            
+           
+            document.getElementById('btn-web').classList.remove('active-track');
+            document.getElementById('btn-data').classList.remove('active-track');
+
+            if (trackKey === 'web') {
+                document.getElementById('btn-web').classList.add('active-track');
+            } else {
+                document.getElementById('btn-data').classList.add('active-track');
+            }
+
+            
+            renderTasks(currentTrack);
+        }
+
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            renderTasks(currentTrack);
+        });
+    </script>
 </body>
 
 </html>

@@ -533,6 +533,23 @@ a.active {
   color: #6b21a8;
 }
 
+.track-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.track-btn.active-track {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #1d4ed8;
+}
+
 
 @media (max-width: 1150px) {
   .tasks-grid {
